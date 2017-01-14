@@ -1,0 +1,16 @@
+PODS:
+  - AAPhotoCircleCrop (0.1.0)
+
+DEPENDENCIES:
+  - AAPhotoCircleCrop (from `../`)
+
+EXTERNAL SOURCES:
+  AAPhotoCircleCrop:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AAPhotoCircleCrop: c773b6d5aa5dbb46b6da636a375f055eded9400b
+
+PODFILE CHECKSUM: dc6c6d16a9e59ae2527700c2ec3e14f6e021c2db
+
+COCOAPODS: 1.1.1
