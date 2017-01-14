@@ -7,17 +7,32 @@
 //
 
 import UIKit
+import AAPhotoCircleCrop
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, KACircleCropViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let circleCropController = KACircleCropViewController(withImage: UIImage(named: "my_photo.jpg")!)
+        circleCropController.delegate = self
+        present(circleCropController, animated: false, completion: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK:  KACircleCropViewControllerDelegate methods
+    
+    func circleCropDidCancel() {
+        //Basic dismiss
+        dismiss(animated: false, completion: nil)
+    }
+    
+    func circleCropDidCropImage(_ image: UIImage) {
+        //Same as dismiss but we also return the image
+        dismiss(animated: false, completion: nil)
     }
 }
 
