@@ -18,6 +18,12 @@ open class KACircleCropCutterView: UIView {
         }
     }
     
+    var circleDiameter: CGFloat = 240 {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.isOpaque = false
@@ -36,7 +42,7 @@ open class KACircleCropCutterView: UIView {
         UIRectFill(rect)
         
         //This is the same rect as the UIScrollView size 240 * 240, remains centered
-        let circle = UIBezierPath(ovalIn: CGRect(x: rect.size.width/2 - 240/2, y: rect.size.height/2 - 240/2, width: 240, height: 240))
+        let circle = UIBezierPath(ovalIn: CGRect(x: rect.size.width/2 - circleDiameter/2, y: rect.size.height/2 - circleDiameter/2, width: circleDiameter, height: circleDiameter))
         context?.setBlendMode(.clear)
         UIColor.clear.setFill()
         circle.fill()

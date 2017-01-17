@@ -21,12 +21,16 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     
     var image: UIImage
     let imageView = UIImageView()
-    let scrollView = KACircleCropScrollView(frame: CGRect(x: 0, y: 0, width: 240, height: 240))
-    let cutterView = KACircleCropCutterView()
+    var scrollView: KACircleCropScrollView!
+    var cutterView: KACircleCropCutterView!
     
-//    let label = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 30))
     open let okButton = UIButton()
     open let backButton = UIButton()
+    
+    private var circleDiameter: CGFloat {
+        let circleOffset: CGFloat = 40
+        return UIScreen.main.bounds.width - circleOffset * 2
+    }
     
     public init(withImage image: UIImage) {
         self.image = image
@@ -43,10 +47,12 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.black
-        scrollView.backgroundColor = UIColor.black
         
         imageView.image = image
         imageView.frame = CGRect(origin: CGPoint.zero, size: image.size)
+        
+        scrollView = KACircleCropScrollView(frame: CGRect(x: 0, y: 0, width: circleDiameter, height: circleDiameter))
+        scrollView.backgroundColor = UIColor.black
         scrollView.delegate = self
         scrollView.addSubview(imageView)
         scrollView.contentSize = image.size
@@ -67,7 +73,7 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         scrollView.center = view.center
         
         view.addSubview(scrollView)
-        view.addSubview(cutterView)
+        
         
         setupCutterView()
         setupButtons()
@@ -78,6 +84,11 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     //- - -
     
     fileprivate func setupCutterView() {
+        cutterView = KACircleCropCutterView()
+        cutterView.circleDiameter = circleDiameter
+        
+        view.addSubview(cutterView)
+        
         cutterView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addConstraint(NSLayoutConstraint(item: cutterView, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: cutterView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 0))
@@ -113,19 +124,6 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: 0))
     }
     
-    
-//    override open func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-//        
-//        
-//        coordinator.animate(alongsideTransition: { (UIViewControllerTransitionCoordinatorContext) -> Void in
-//            
-//            self.setLabelAndButtonFrames()
-//            
-//            }) { (UIViewControllerTransitionCoordinatorContext) -> Void in
-//        }
-//    }
-    
-    
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
@@ -135,11 +133,12 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         return true
     }
     
-    // MARK: Button taps
+    //- - -
+    // MARK: - Actions
+    //- - -
     
     func didTapOk() {
         
-
         let newSize = CGSize(width: image.size.width*scrollView.zoomScale, height: image.size.height*scrollView.zoomScale)
         
         let offset = scrollView.contentOffset
@@ -165,9 +164,7 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func didTapBack() {
-        
         delegate?.circleCropDidCancel()
-        
     }
     
 
