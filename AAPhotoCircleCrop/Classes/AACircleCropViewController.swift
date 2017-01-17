@@ -17,21 +17,30 @@ public protocol AACircleCropViewControllerDelegate {
 
 open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     
+    // Open properties
     open var delegate: AACircleCropViewControllerDelegate?
+    open let okButton = UIButton()
+    open let backButton = UIButton()
+    open var imageSize: CGSize?
+    override open var prefersStatusBarHidden : Bool {
+        return true
+    }
     
+    // Internal properties
     var image: UIImage
     let imageView = UIImageView()
     var scrollView: AACircleCropScrollView!
     var cutterView: AACircleCropCutterView!
     
-    open let okButton = UIButton()
-    open let backButton = UIButton()
-    
+    // Private properties
     private var circleDiameter: CGFloat {
         let circleOffset: CGFloat = 40
         return UIScreen.main.bounds.width - circleOffset * 2
     }
     
+    //- - -
+    // MARK: - Init
+    //- - -
     public init(withImage image: UIImage) {
         self.image = image
         super.init(nibName: nil, bundle: nil)
@@ -41,7 +50,9 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         fatalError("init(coder:) has n  ot been implemented")
     }
     
-    // MARK: View management
+    //- - -
+    // MARK: - View Management
+    //- - -
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -127,11 +138,6 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         return imageView
     }
     
-    
-    override open var prefersStatusBarHidden : Bool {
-        return true
-    }
-    
     //- - -
     // MARK: - Actions
     //- - -
@@ -151,12 +157,13 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         image.draw(in: sharpRect)
         let finalImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        if let imageData = UIImagePNGRepresentation(finalImage!) {
-            if let pngImage = UIImage(data: imageData) {
-                delegate?.circleCropDidCropImage(pngImage)
-            } else {
-                delegate?.circleCropDidCancel()
+        if let imageData = UIImagePNGRepresentation(finalImage!), var pngImage = UIImage(data: imageData) {
+            
+            if let imageSize = imageSize {
+                pngImage = pngImage.resizeImage(newWidth: imageSize.width)
             }
+            delegate?.circleCropDidCropImage(pngImage)
+            
         } else {
             delegate?.circleCropDidCancel()
         }
@@ -167,6 +174,4 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         delegate?.circleCropDidCancel()
         self.dismiss(animated: true, completion: nil)
     }
-    
-
 }
