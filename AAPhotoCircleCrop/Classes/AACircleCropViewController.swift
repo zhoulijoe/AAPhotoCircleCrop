@@ -101,12 +101,12 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         okButton.setTitle("Select", for: UIControlState())
         okButton.setTitleColor(UIColor.white, for: UIControlState())
         okButton.titleLabel?.font = backButton.titleLabel?.font.withSize(17)
-        okButton.addTarget(self, action: #selector(didTapOk), for: .touchUpInside)
+        okButton.addTarget(self, action: #selector(selectAction), for: .touchUpInside)
         
         backButton.setTitle("Cancel", for: UIControlState())
         backButton.setTitleColor(UIColor.white, for: UIControlState())
         backButton.titleLabel?.font = backButton.titleLabel?.font.withSize(17)
-        backButton.addTarget(self, action: #selector(didTapBack), for: .touchUpInside)
+        backButton.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         
         // Adding buttons to the superview
         cutterView.addSubview(okButton)
@@ -136,7 +136,7 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     // MARK: - Actions
     //- - -
     
-    func didTapOk() {
+    func selectAction() {
         
         let newSize = CGSize(width: image.size.width*scrollView.zoomScale, height: image.size.height*scrollView.zoomScale)
         
@@ -160,10 +160,12 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         } else {
             delegate?.circleCropDidCancel()
         }
+        self.dismiss(animated: true, completion: nil) 
     }
     
-    func didTapBack() {
+    func cancelAction() {
         delegate?.circleCropDidCancel()
+        self.dismiss(animated: true, completion: nil)
     }
     
 

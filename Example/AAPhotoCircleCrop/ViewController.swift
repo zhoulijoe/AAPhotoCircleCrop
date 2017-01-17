@@ -11,28 +11,36 @@ import AAPhotoCircleCrop
 
 class ViewController: UIViewController, AACircleCropViewControllerDelegate {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageView.layer.borderWidth = 2
+        imageView.layer.borderColor = UIColor.black.cgColor
+        imageView.clipsToBounds = false
+        imageView.layer.cornerRadius = imageView.frame.width/2
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let circleCropController = AACircleCropViewController(withImage: UIImage(named: "test.png")!)
+    //- - -
+    // MARK: - Actions
+    //- - -
+    @IBAction func cropAction(_ sender: UIButton) {
+        let circleCropController = AACircleCropViewController(withImage: UIImage(named: "my_photo.jpg")!)
         circleCropController.delegate = self
-        present(circleCropController, animated: false, completion: nil)
+        present(circleCropController, animated: true, completion: nil)
     }
 
-    // MARK:  AACircleCropViewControllerDelegate methods
-    
+    //- - -
+    // MARK: - AACircleCropViewControllerDelegate
+    //- - -
     func circleCropDidCancel() {
-        //Basic dismiss
-        dismiss(animated: false, completion: nil)
+        print("User canceled the crop flow")
     }
     
     func circleCropDidCropImage(_ image: UIImage) {
-        //Same as dismiss but we also return the image
-        dismiss(animated: false, completion: nil)
+        imageView.image = image
+        print("Image cropped!")
     }
 }
 
