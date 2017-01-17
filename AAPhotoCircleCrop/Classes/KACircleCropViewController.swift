@@ -70,51 +70,9 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         view.addSubview(cutterView)
         
         setupCutterView()
-        
-        //Add in the black view. Note we make a square with some extra space +100 pts to fully cover the photo when rotated
-//        cutterView.frame = view.frame
-//        cutterView.frame.size.height += 100
-//        cutterView.frame.size.width = cutterView.frame.size.height
-        
-        //Add the label and buttons
-//        label.text = "Move and Scale"
-//        label.textAlignment = .center
-//        label.textColor = UIColor.white
-//        label.font = label.font.withSize(17)
-//        
         setupButtons()
-        
-        
-//        cutterView.addSubview(label)
-        
-        
-//        setLabelAndButtonFrames()
     }
-    
-//    func setLabelAndButtonFrames() {
-//        
-//        scrollView.center = view.center
-//        cutterView.center = view.center
-    
-        // Setup constraints for backButton
-//        okButton.translatesAutoresizingMaskIntoConstraints = false
-//        backButton.translatesAutoresizingMaskIntoConstraints = false
-//        
-//        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .leading, relatedBy: .equal, toItem: cutterView, attribute: .leading, multiplier: 1, constant: 16))
-//        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .bottom, relatedBy: .equal, toItem: cutterView, attribute: .bottom, multiplier: 1, constant: 32))
-        
-        // Setup constraints for okButton
-//        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .trailing, relatedBy: .equal, toItem: cutterView, attribute: .trailing, multiplier: 1, constant: -16))
-//        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .bottom, relatedBy: .equal, toItem: cutterView, attribute: .bottom, multiplier: 1, constant: -32))
-        
-//        label.frame.origin = CGPoint(x: cutterView.frame.size.width/2 - label.frame.size.width/2, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 3)
-//        
-//        okButton.frame.origin = CGPoint(x: cutterView.frame.size.width/2 + view.frame.size.width/2 - okButton.frame.size.width - 12, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 3)
-//        
-//        backButton.frame.origin = CGPoint(x: cutterView.frame.size.width/2 - view.frame.size.width/2 + 3, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 1)
-        
-//    }
-    
+
     //- - -
     // MARK: - Helper methods
     //- - -
@@ -137,7 +95,7 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         
         backButton.setTitle("Cancel", for: UIControlState())
         backButton.setTitleColor(UIColor.white, for: UIControlState())
-        backButton.titleLabel?.font = backButton.titleLabel?.font.withSize(30)
+        backButton.titleLabel?.font = backButton.titleLabel?.font.withSize(17)
         backButton.addTarget(self, action: #selector(didTapBack), for: .touchUpInside)
         
         // Adding buttons to the superview
@@ -149,6 +107,10 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .trailing, relatedBy: .equal, toItem: cutterView, attribute: .trailingMargin, multiplier: 1, constant: 0))
         cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: 0))
         
+        // okButton consrtraints
+        okButton.translatesAutoresizingMaskIntoConstraints = false
+        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .leading, relatedBy: .equal, toItem: cutterView, attribute: .leadingMargin, multiplier: 1, constant: 0))
+        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: 0))
     }
     
     
