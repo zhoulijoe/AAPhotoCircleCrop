@@ -22,8 +22,10 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     open let okButton = UIButton()
     open let backButton = UIButton()
     open var imageSize: CGSize?
-    override open var prefersStatusBarHidden : Bool {
-        return true
+    
+    // Status bar settings
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     // Internal properties
