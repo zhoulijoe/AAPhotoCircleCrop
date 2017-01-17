@@ -18,7 +18,7 @@ class ViewController: UIViewController, KACircleCropViewControllerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let circleCropController = KACircleCropViewController(withImage: UIImage(named: "my_photo.jpg")!)
+        let circleCropController = KACircleCropViewController(withImage: UIImage(named: "test.png")!)
         circleCropController.delegate = self
         present(circleCropController, animated: false, completion: nil)
     }

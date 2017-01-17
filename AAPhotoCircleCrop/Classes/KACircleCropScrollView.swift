@@ -3,6 +3,7 @@
 //  Circle Crop View Controller
 //
 //  Created by Keke Arif on 21/02/2016.
+//  Modified by Andrea Antonioni on 14/01/2017
 //  Copyright © 2016 Keke Arif. All rights reserved.
 //
 

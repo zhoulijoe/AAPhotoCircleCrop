@@ -3,17 +3,16 @@
 //  Circle Crop View Controller
 //
 //  Created by Keke Arif on 29/02/2016.
+//  Modified by Andrea Antonioni on 14/01/2017
 //  Copyright © 2016 Keke Arif. All rights reserved.
 //
 
 import UIKit
 
-public protocol KACircleCropViewControllerDelegate
-{
+public protocol KACircleCropViewControllerDelegate {
     
     func circleCropDidCancel()
     func circleCropDidCropImage(_ image: UIImage)
-    
 }
 
 open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
@@ -25,10 +24,9 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     let scrollView = KACircleCropScrollView(frame: CGRect(x: 0, y: 0, width: 240, height: 240))
     let cutterView = KACircleCropCutterView()
     
-    let label = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 30))
-    let okButton = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 30))
-    let backButton = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 30))
-    
+//    let label = UILabel(frame: CGRect(x: 0, y: 0, width: 130, height: 30))
+    open let okButton = UIButton()
+    open let backButton = UIButton()
     
     public init(withImage image: UIImage) {
         self.image = image
@@ -36,13 +34,7 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     }
 
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override open func didReceiveMemoryWarning() {
-        
-        super.didReceiveMemoryWarning()
-        
+        fatalError("init(coder:) has n  ot been implemented")
     }
     
     // MARK: View management
@@ -72,65 +64,104 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         //Center vertically
         scrollView.contentOffset = CGPoint(x: 0, y: (scrollView.contentSize.height - scrollView.frame.size.height)/2)
         
+        scrollView.center = view.center
+        
+        view.addSubview(scrollView)
+        view.addSubview(cutterView)
+        
+        setupCutterView()
+        
         //Add in the black view. Note we make a square with some extra space +100 pts to fully cover the photo when rotated
-        cutterView.frame = view.frame
-        cutterView.frame.size.height += 100
-        cutterView.frame.size.width = cutterView.frame.size.height
+//        cutterView.frame = view.frame
+//        cutterView.frame.size.height += 100
+//        cutterView.frame.size.width = cutterView.frame.size.height
         
         //Add the label and buttons
-        label.text = "Move and Scale"
-        label.textAlignment = .center
-        label.textColor = UIColor.white
-        label.font = label.font.withSize(17)
+//        label.text = "Move and Scale"
+//        label.textAlignment = .center
+//        label.textColor = UIColor.white
+//        label.font = label.font.withSize(17)
+//        
+        setupButtons()
         
-        okButton.setTitle("OK", for: UIControlState())
+        
+//        cutterView.addSubview(label)
+        
+        
+//        setLabelAndButtonFrames()
+    }
+    
+//    func setLabelAndButtonFrames() {
+//        
+//        scrollView.center = view.center
+//        cutterView.center = view.center
+    
+        // Setup constraints for backButton
+//        okButton.translatesAutoresizingMaskIntoConstraints = false
+//        backButton.translatesAutoresizingMaskIntoConstraints = false
+//        
+//        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .leading, relatedBy: .equal, toItem: cutterView, attribute: .leading, multiplier: 1, constant: 16))
+//        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .bottom, relatedBy: .equal, toItem: cutterView, attribute: .bottom, multiplier: 1, constant: 32))
+        
+        // Setup constraints for okButton
+//        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .trailing, relatedBy: .equal, toItem: cutterView, attribute: .trailing, multiplier: 1, constant: -16))
+//        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .bottom, relatedBy: .equal, toItem: cutterView, attribute: .bottom, multiplier: 1, constant: -32))
+        
+//        label.frame.origin = CGPoint(x: cutterView.frame.size.width/2 - label.frame.size.width/2, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 3)
+//        
+//        okButton.frame.origin = CGPoint(x: cutterView.frame.size.width/2 + view.frame.size.width/2 - okButton.frame.size.width - 12, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 3)
+//        
+//        backButton.frame.origin = CGPoint(x: cutterView.frame.size.width/2 - view.frame.size.width/2 + 3, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 1)
+        
+//    }
+    
+    //- - -
+    // MARK: - Helper methods
+    //- - -
+    
+    fileprivate func setupCutterView() {
+        cutterView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addConstraint(NSLayoutConstraint(item: cutterView, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: cutterView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: cutterView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: cutterView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: 0))
+    }
+    
+    fileprivate func setupButtons() {
+        
+        // Styles
+        okButton.setTitle("Select", for: UIControlState())
         okButton.setTitleColor(UIColor.white, for: UIControlState())
         okButton.titleLabel?.font = backButton.titleLabel?.font.withSize(17)
         okButton.addTarget(self, action: #selector(didTapOk), for: .touchUpInside)
         
-        backButton.setTitle("<", for: UIControlState())
+        backButton.setTitle("Cancel", for: UIControlState())
         backButton.setTitleColor(UIColor.white, for: UIControlState())
         backButton.titleLabel?.font = backButton.titleLabel?.font.withSize(30)
         backButton.addTarget(self, action: #selector(didTapBack), for: .touchUpInside)
         
-        setLabelAndButtonFrames()
-        
-        view.addSubview(scrollView)
-        view.addSubview(cutterView)
-        cutterView.addSubview(label)
+        // Adding buttons to the superview
         cutterView.addSubview(okButton)
         cutterView.addSubview(backButton)
         
+        // backButton constraints
+        backButton.translatesAutoresizingMaskIntoConstraints = false
+        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .trailing, relatedBy: .equal, toItem: cutterView, attribute: .trailingMargin, multiplier: 1, constant: 0))
+        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: 0))
         
     }
     
     
-    func setLabelAndButtonFrames() {
-        
-        scrollView.center = view.center
-        cutterView.center = view.center
-        
-        label.frame.origin = CGPoint(x: cutterView.frame.size.width/2 - label.frame.size.width/2, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 3)
-        
-        okButton.frame.origin = CGPoint(x: cutterView.frame.size.width/2 + view.frame.size.width/2 - okButton.frame.size.width - 12, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 3)
-        
-        backButton.frame.origin = CGPoint(x: cutterView.frame.size.width/2 - view.frame.size.width/2 + 3, y: cutterView.frame.size.height/2 - view.frame.size.height/2 + 1)
-        
-    }
-    
-    
-    override open func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        
-        
-        coordinator.animate(alongsideTransition: { (UIViewControllerTransitionCoordinatorContext) -> Void in
-            
-            self.setLabelAndButtonFrames()
-            
-            }) { (UIViewControllerTransitionCoordinatorContext) -> Void in
-        }
-        
-        
-    }
+//    override open func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+//        
+//        
+//        coordinator.animate(alongsideTransition: { (UIViewControllerTransitionCoordinatorContext) -> Void in
+//            
+//            self.setLabelAndButtonFrames()
+//            
+//            }) { (UIViewControllerTransitionCoordinatorContext) -> Void in
+//        }
+//    }
     
     
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
@@ -141,8 +172,6 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     override open var prefersStatusBarHidden : Bool {
         return true
     }
-    
-    
     
     // MARK: Button taps
     
@@ -171,9 +200,6 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         } else {
             delegate?.circleCropDidCancel()
         }
-        
-        
-        
     }
     
     func didTapBack() {

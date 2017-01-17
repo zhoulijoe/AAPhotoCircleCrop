@@ -3,6 +3,7 @@
 //  Circle Crop View Controller
 //
 //  Created by Keke Arif on 21/02/2016.
+//  Modified by Andrea Antonioni on 14/01/2017
 //  Copyright © 2016 Keke Arif. All rights reserved.
 //
 
@@ -15,7 +16,6 @@ open class KACircleCropCutterView: UIView {
         didSet {
             setNeedsDisplay()
         }
-        
     }
     
     override init(frame: CGRect) {
@@ -42,11 +42,11 @@ open class KACircleCropCutterView: UIView {
         circle.fill()
         
         //This is the same rect as the UIScrollView size 240 * 240, remains centered
-        let square = UIBezierPath(rect: CGRect(x: rect.size.width/2 - 240/2, y: rect.size.height/2 - 240/2, width: 240, height: 240))
-        UIColor.lightGray.setStroke()
-        square.lineWidth = 1.0
-        context?.setBlendMode(.normal)
-        square.stroke()
+//        let square = UIBezierPath(rect: CGRect(x: rect.size.width/2 - 240/2, y: rect.size.height/2 - 240/2, width: 240, height: 240))
+//        UIColor.lightGray.setStroke()
+//        square.lineWidth = 1.0
+//        context?.setBlendMode(.normal)
+//        square.stroke()
         
     }
     
