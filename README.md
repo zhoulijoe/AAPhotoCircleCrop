@@ -17,7 +17,7 @@ AAPhotoCircleCrop is available through [CocoaPods](http://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "AAPhotoCircleCrop"
+pod 'AAPhotoCircleCrop'
 ```
 
 ## Author

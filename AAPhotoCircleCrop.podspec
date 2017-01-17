@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AAPhotoCircleCrop'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A simple circular image cropper written in Swift'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This is a simple circula image cropper written in Swift which can be used after the user image selection. The user can select the circle they want to user as profile picture
+This is a simple circular image cropper written in Swift which can be used after the user image selection. The user can select the circle they want to user as profile picture.
                        DESC
 
   s.homepage         = 'https://github.com/andreaantonioni/AAPhotoCircleCrop'
