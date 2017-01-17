@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/AAPhotoCircleCrop.svg?style=flat)](http://cocoapods.org/pods/AAPhotoCircleCrop)
 [![Platform](https://img.shields.io/cocoapods/p/AAPhotoCircleCrop.svg?style=flat)](http://cocoapods.org/pods/AAPhotoCircleCrop)
 
-AAPhotoCircleCrop is a simple circual photo cropper writter in Swift, based on Whatsapp.
+AAPhotoCircleCrop is a simple circular photo cropper writter in Swift, based on Whatsapp.
 
 ![](https://github.com/andreaantonioni/AAPhotoCircleCrop/blob/master/Resources/screenshot1.png "Screenshot 1")
 
