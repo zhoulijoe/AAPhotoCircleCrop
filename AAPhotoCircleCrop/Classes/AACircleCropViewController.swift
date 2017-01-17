@@ -1,5 +1,5 @@
 //
-//  KACircleCropViewController.swift
+//  AACircleCropViewController.swift
 //  Circle Crop View Controller
 //
 //  Created by Keke Arif on 29/02/2016.
@@ -9,20 +9,20 @@
 
 import UIKit
 
-public protocol KACircleCropViewControllerDelegate {
+public protocol AACircleCropViewControllerDelegate {
     
     func circleCropDidCancel()
     func circleCropDidCropImage(_ image: UIImage)
 }
 
-open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
+open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     
-    open var delegate: KACircleCropViewControllerDelegate?
+    open var delegate: AACircleCropViewControllerDelegate?
     
     var image: UIImage
     let imageView = UIImageView()
-    var scrollView: KACircleCropScrollView!
-    var cutterView: KACircleCropCutterView!
+    var scrollView: AACircleCropScrollView!
+    var cutterView: AACircleCropCutterView!
     
     open let okButton = UIButton()
     open let backButton = UIButton()
@@ -51,7 +51,7 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         imageView.image = image
         imageView.frame = CGRect(origin: CGPoint.zero, size: image.size)
         
-        scrollView = KACircleCropScrollView(frame: CGRect(x: 0, y: 0, width: circleDiameter, height: circleDiameter))
+        scrollView = AACircleCropScrollView(frame: CGRect(x: 0, y: 0, width: circleDiameter, height: circleDiameter))
         scrollView.backgroundColor = UIColor.black
         scrollView.delegate = self
         scrollView.addSubview(imageView)
@@ -74,7 +74,6 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         
         view.addSubview(scrollView)
         
-        
         setupCutterView()
         setupButtons()
     }
@@ -84,7 +83,7 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     //- - -
     
     fileprivate func setupCutterView() {
-        cutterView = KACircleCropCutterView()
+        cutterView = AACircleCropCutterView()
         cutterView.circleDiameter = circleDiameter
         
         view.addSubview(cutterView)
@@ -115,13 +114,13 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         
         // backButton constraints
         backButton.translatesAutoresizingMaskIntoConstraints = false
-        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .trailing, relatedBy: .equal, toItem: cutterView, attribute: .trailingMargin, multiplier: 1, constant: 0))
-        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: 0))
+        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .leading, relatedBy: .equal, toItem: cutterView, attribute: .leadingMargin, multiplier: 1, constant: 20))
+        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: -32))
         
         // okButton consrtraints
         okButton.translatesAutoresizingMaskIntoConstraints = false
-        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .leading, relatedBy: .equal, toItem: cutterView, attribute: .leadingMargin, multiplier: 1, constant: 0))
-        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: 0))
+        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .trailing, relatedBy: .equal, toItem: cutterView, attribute: .trailingMargin, multiplier: 1, constant: -20))
+        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: -32))
     }
     
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
@@ -143,8 +142,8 @@ open class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         
         let offset = scrollView.contentOffset
         
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: 240, height: 240), false, 0)
-        let circlePath = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: 240, height: 240))
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: circleDiameter, height: circleDiameter), false, 0)
+        let circlePath = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: circleDiameter, height: circleDiameter))
         circlePath.addClip()
         var sharpRect = CGRect(x: -offset.x, y: -offset.y, width: newSize.width, height: newSize.height)
         sharpRect = sharpRect.integral

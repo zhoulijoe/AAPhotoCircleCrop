@@ -1,5 +1,5 @@
 //
-//  KACircleCropScrollView.swift
+//  AACircleCropScrollView.swift
 //  Circle Crop View Controller
 //
 //  Created by Keke Arif on 21/02/2016.
@@ -9,7 +9,7 @@
 
 import UIKit
 
-open class KACircleCropScrollView: UIScrollView {
+open class AACircleCropScrollView: UIScrollView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

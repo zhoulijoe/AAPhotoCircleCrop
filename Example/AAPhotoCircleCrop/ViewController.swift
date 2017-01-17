@@ -9,7 +9,7 @@
 import UIKit
 import AAPhotoCircleCrop
 
-class ViewController: UIViewController, KACircleCropViewControllerDelegate {
+class ViewController: UIViewController, AACircleCropViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +18,12 @@ class ViewController: UIViewController, KACircleCropViewControllerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let circleCropController = KACircleCropViewController(withImage: UIImage(named: "test.png")!)
+        let circleCropController = AACircleCropViewController(withImage: UIImage(named: "test.png")!)
         circleCropController.delegate = self
         present(circleCropController, animated: false, completion: nil)
     }
 
-    // MARK:  KACircleCropViewControllerDelegate methods
+    // MARK:  AACircleCropViewControllerDelegate methods
     
     func circleCropDidCancel() {
         //Basic dismiss

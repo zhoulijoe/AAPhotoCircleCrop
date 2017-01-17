@@ -1,5 +1,5 @@
 //
-//  KACircleCropCutterView.swift
+//  AACircleCropCutterView.swift
 //  Circle Crop View Controller
 //
 //  Created by Keke Arif on 21/02/2016.
@@ -9,7 +9,7 @@
 
 import UIKit
 
-open class KACircleCropCutterView: UIView {
+open class AACircleCropCutterView: UIView {
     
     override open var frame: CGRect {
         

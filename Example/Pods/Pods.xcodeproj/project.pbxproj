@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1732BCAE1E2A90FC0099EDCE /* KACircleCropCutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAB1E2A90FC0099EDCE /* KACircleCropCutterView.swift */; };
-		1732BCAF1E2A90FC0099EDCE /* KACircleCropScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAC1E2A90FC0099EDCE /* KACircleCropScrollView.swift */; };
-		1732BCB01E2A90FC0099EDCE /* KACircleCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAD1E2A90FC0099EDCE /* KACircleCropViewController.swift */; };
+		1732BCAE1E2A90FC0099EDCE /* AACircleCropCutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAB1E2A90FC0099EDCE /* AACircleCropCutterView.swift */; };
+		1732BCAF1E2A90FC0099EDCE /* AACircleCropScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAC1E2A90FC0099EDCE /* AACircleCropScrollView.swift */; };
+		1732BCB01E2A90FC0099EDCE /* AACircleCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAD1E2A90FC0099EDCE /* AACircleCropViewController.swift */; };
 		213E97F97B0318F22D6636E2B0BFD5ED /* AAPhotoCircleCrop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C45E341616FB4B64AF12515790067 /* AAPhotoCircleCrop-dummy.m */; };
 		287398C4C53CA5D8B03E43F5556CD5C7 /* AAPhotoCircleCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DCD981FF630CE33198EDB38DAEF3F8A /* AAPhotoCircleCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A7B7911B2E4C5FD5E74995202F40162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -36,9 +36,9 @@
 		0DFD3F39350E7C25009481DA041AA4C8 /* AAPhotoCircleCrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAPhotoCircleCrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E75A06FBD9225583F4D67C74EC4D801 /* Pods-AAPhotoCircleCrop_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAPhotoCircleCrop_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		15BA6B0FEEBAE07D1B364AAE09920D63 /* Pods-AAPhotoCircleCrop_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPhotoCircleCrop_Tests-resources.sh"; sourceTree = "<group>"; };
-		1732BCAB1E2A90FC0099EDCE /* KACircleCropCutterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KACircleCropCutterView.swift; sourceTree = "<group>"; };
-		1732BCAC1E2A90FC0099EDCE /* KACircleCropScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KACircleCropScrollView.swift; sourceTree = "<group>"; };
-		1732BCAD1E2A90FC0099EDCE /* KACircleCropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KACircleCropViewController.swift; sourceTree = "<group>"; };
+		1732BCAB1E2A90FC0099EDCE /* AACircleCropCutterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleCropCutterView.swift; sourceTree = "<group>"; };
+		1732BCAC1E2A90FC0099EDCE /* AACircleCropScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleCropScrollView.swift; sourceTree = "<group>"; };
+		1732BCAD1E2A90FC0099EDCE /* AACircleCropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleCropViewController.swift; sourceTree = "<group>"; };
 		18C9D6F250BAA3B6EAB548E7107CC18F /* Pods-AAPhotoCircleCrop_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAPhotoCircleCrop_Example-umbrella.h"; sourceTree = "<group>"; };
 		1E8465C35284DDC815E22F5A1A13516B /* AAPhotoCircleCrop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AAPhotoCircleCrop.modulemap; sourceTree = "<group>"; };
 		29D7A2DF10831A01115F9E1BDB50CA68 /* Pods-AAPhotoCircleCrop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPhotoCircleCrop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,9 +188,9 @@
 		7F90F12515E1D1F4D24D7DC4AA01E01E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1732BCAB1E2A90FC0099EDCE /* KACircleCropCutterView.swift */,
-				1732BCAC1E2A90FC0099EDCE /* KACircleCropScrollView.swift */,
-				1732BCAD1E2A90FC0099EDCE /* KACircleCropViewController.swift */,
+				1732BCAB1E2A90FC0099EDCE /* AACircleCropCutterView.swift */,
+				1732BCAC1E2A90FC0099EDCE /* AACircleCropScrollView.swift */,
+				1732BCAD1E2A90FC0099EDCE /* AACircleCropViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -351,10 +351,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1732BCB01E2A90FC0099EDCE /* KACircleCropViewController.swift in Sources */,
-				1732BCAF1E2A90FC0099EDCE /* KACircleCropScrollView.swift in Sources */,
+				1732BCB01E2A90FC0099EDCE /* AACircleCropViewController.swift in Sources */,
+				1732BCAF1E2A90FC0099EDCE /* AACircleCropScrollView.swift in Sources */,
 				213E97F97B0318F22D6636E2B0BFD5ED /* AAPhotoCircleCrop-dummy.m in Sources */,
-				1732BCAE1E2A90FC0099EDCE /* KACircleCropCutterView.swift in Sources */,
+				1732BCAE1E2A90FC0099EDCE /* AACircleCropCutterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
