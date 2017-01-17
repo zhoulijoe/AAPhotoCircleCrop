@@ -22,7 +22,7 @@ pod "AAPhotoCircleCrop"
 
 ## Author
 
-Andrea Antonioni, antonioni@igenius.net
+Andrea Antonioni, andreaantonioni97@gmail.com
 
 ## License
 
