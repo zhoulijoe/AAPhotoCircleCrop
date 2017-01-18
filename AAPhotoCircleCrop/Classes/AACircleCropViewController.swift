@@ -95,7 +95,7 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         if isModal {
             super.dismiss(animated: animated, completion: completion)
         } else {
-            navigationController?.popViewController(animated: animated)
+            _ = navigationController?.popViewController(animated: animated)
         }
     }
 

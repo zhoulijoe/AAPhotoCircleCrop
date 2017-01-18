@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AAPhotoCircleCrop'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A simple circular image cropper written in Swift'
 
 # This description is used to generate tags and improve search results.
@@ -22,7 +22,7 @@ This is a simple circular image cropper written in Swift which can be used after
                        DESC
 
   s.homepage         = 'https://github.com/andreaantonioni/AAPhotoCircleCrop'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  # s.screenshots     = 'https://github.com/andreaantonioni/AAPhotoCircleCrop/blob/master/Resources/screenshot1.png', 'https://github.com/andreaantonioni/AAPhotoCircleCrop/blob/master/Resources/screenshot2.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Andrea Antonioni' => 'andreaantonioni97@gmail.com' }
   s.source           = { :git => 'https://github.com/andreaantonioni/AAPhotoCircleCrop.git', :tag => s.version.to_s }
