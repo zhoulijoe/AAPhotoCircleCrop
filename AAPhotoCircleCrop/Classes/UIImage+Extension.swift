@@ -1,5 +1,5 @@
 //
-//  UIImage+Resizable.swift
+//  UIImage+Extension.swift
 //  Pods
 //
 //  Created by Andrea Antonioni on 17/01/17.

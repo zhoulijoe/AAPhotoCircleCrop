@@ -10,7 +10,8 @@
 		1732BCAE1E2A90FC0099EDCE /* AACircleCropCutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAB1E2A90FC0099EDCE /* AACircleCropCutterView.swift */; };
 		1732BCAF1E2A90FC0099EDCE /* AACircleCropScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAC1E2A90FC0099EDCE /* AACircleCropScrollView.swift */; };
 		1732BCB01E2A90FC0099EDCE /* AACircleCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAD1E2A90FC0099EDCE /* AACircleCropViewController.swift */; };
-		177F11DE1E2E67C900C1FCC7 /* UIImage+Resizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F11DD1E2E67C900C1FCC7 /* UIImage+Resizable.swift */; };
+		177F11DE1E2E67C900C1FCC7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F11DD1E2E67C900C1FCC7 /* UIImage+Extension.swift */; };
+		17BC76491E2F5B2F009630DF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BC76481E2F5B2F009630DF /* UIViewController+Extension.swift */; };
 		213E97F97B0318F22D6636E2B0BFD5ED /* AAPhotoCircleCrop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C45E341616FB4B64AF12515790067 /* AAPhotoCircleCrop-dummy.m */; };
 		287398C4C53CA5D8B03E43F5556CD5C7 /* AAPhotoCircleCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DCD981FF630CE33198EDB38DAEF3F8A /* AAPhotoCircleCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A7B7911B2E4C5FD5E74995202F40162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -40,7 +41,8 @@
 		1732BCAB1E2A90FC0099EDCE /* AACircleCropCutterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleCropCutterView.swift; sourceTree = "<group>"; };
 		1732BCAC1E2A90FC0099EDCE /* AACircleCropScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleCropScrollView.swift; sourceTree = "<group>"; };
 		1732BCAD1E2A90FC0099EDCE /* AACircleCropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleCropViewController.swift; sourceTree = "<group>"; };
-		177F11DD1E2E67C900C1FCC7 /* UIImage+Resizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resizable.swift"; sourceTree = "<group>"; };
+		177F11DD1E2E67C900C1FCC7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		17BC76481E2F5B2F009630DF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		18C9D6F250BAA3B6EAB548E7107CC18F /* Pods-AAPhotoCircleCrop_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAPhotoCircleCrop_Example-umbrella.h"; sourceTree = "<group>"; };
 		1E8465C35284DDC815E22F5A1A13516B /* AAPhotoCircleCrop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AAPhotoCircleCrop.modulemap; sourceTree = "<group>"; };
 		29D7A2DF10831A01115F9E1BDB50CA68 /* Pods-AAPhotoCircleCrop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPhotoCircleCrop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +195,8 @@
 				1732BCAB1E2A90FC0099EDCE /* AACircleCropCutterView.swift */,
 				1732BCAC1E2A90FC0099EDCE /* AACircleCropScrollView.swift */,
 				1732BCAD1E2A90FC0099EDCE /* AACircleCropViewController.swift */,
-				177F11DD1E2E67C900C1FCC7 /* UIImage+Resizable.swift */,
+				177F11DD1E2E67C900C1FCC7 /* UIImage+Extension.swift */,
+				17BC76481E2F5B2F009630DF /* UIViewController+Extension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -354,9 +357,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17BC76491E2F5B2F009630DF /* UIViewController+Extension.swift in Sources */,
 				1732BCB01E2A90FC0099EDCE /* AACircleCropViewController.swift in Sources */,
 				1732BCAF1E2A90FC0099EDCE /* AACircleCropScrollView.swift in Sources */,
-				177F11DE1E2E67C900C1FCC7 /* UIImage+Resizable.swift in Sources */,
+				177F11DE1E2E67C900C1FCC7 /* UIImage+Extension.swift in Sources */,
 				213E97F97B0318F22D6636E2B0BFD5ED /* AAPhotoCircleCrop-dummy.m in Sources */,
 				1732BCAE1E2A90FC0099EDCE /* AACircleCropCutterView.swift in Sources */,
 			);

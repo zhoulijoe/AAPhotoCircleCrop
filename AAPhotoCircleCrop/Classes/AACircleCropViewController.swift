@@ -90,6 +90,14 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         setupCutterView()
         setupButtons()
     }
+    
+    override open func dismiss(animated: Bool, completion: (() -> Void)?) {
+        if isModal {
+            super.dismiss(animated: animated, completion: completion)
+        } else {
+            navigationController?.popViewController(animated: animated)
+        }
+    }
 
     //- - -
     // MARK: - Helper methods
