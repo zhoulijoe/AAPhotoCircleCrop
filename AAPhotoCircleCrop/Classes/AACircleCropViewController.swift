@@ -17,10 +17,9 @@ public protocol AACircleCropViewControllerDelegate {
 
 open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     
-    // Open properties
+    // MARK: - Open properties
     open var delegate: AACircleCropViewControllerDelegate?
-    open let okButton = UIButton()
-    open let backButton = UIButton()
+    open var image: UIImage!
     open var imageSize: CGSize?
     
     // Status bar settings
@@ -28,28 +27,15 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         return .lightContent
     }
     
-    // Internal properties
-    var image: UIImage
-    let imageView = UIImageView()
-    var scrollView: AACircleCropScrollView!
-    var cutterView: AACircleCropCutterView!
-    
-    // Private properties
+    // MARK: - Private properties
+    fileprivate var okButton = UIButton()
+    fileprivate var backButton = UIButton()
+    fileprivate var imageView = UIImageView()
+    fileprivate var scrollView: AACircleCropScrollView!
+    fileprivate var cutterView: AACircleCropCutterView!
     private var circleDiameter: CGFloat {
         let circleOffset: CGFloat = 40
         return UIScreen.main.bounds.width - circleOffset * 2
-    }
-    
-    //- - -
-    // MARK: - Init
-    //- - -
-    public init(withImage image: UIImage) {
-        self.image = image
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has n  ot been implemented")
     }
     
     //- - -
