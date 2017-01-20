@@ -21,6 +21,8 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     open var delegate: AACircleCropViewControllerDelegate?
     open var image: UIImage!
     open var imageSize: CGSize?
+    open var selectTitle: String = "Select"
+    open var cancelTitle: String = "Cancel"
     
     // Status bar settings
     override open var preferredStatusBarStyle: UIStatusBarStyle {
@@ -28,9 +30,9 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     }
     
     // MARK: - Private properties
-    fileprivate var okButton = UIButton()
-    fileprivate var backButton = UIButton()
-    fileprivate var imageView = UIImageView()
+    fileprivate var selectButton: UIButton!
+    fileprivate var cancelButton: UIButton!
+    fileprivate var imageView: UIImageView!
     fileprivate var scrollView: AACircleCropScrollView!
     fileprivate var cutterView: AACircleCropCutterView!
     private var circleDiameter: CGFloat {
@@ -47,6 +49,8 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         
         view.backgroundColor = UIColor.black
         
+        // Setup imageView
+        imageView = UIImageView()
         imageView.image = image
         imageView.frame = CGRect(origin: CGPoint.zero, size: image.size)
         
@@ -104,30 +108,33 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     
     fileprivate func setupButtons() {
         
-        // Styles
-        okButton.setTitle("Select", for: UIControlState())
-        okButton.setTitleColor(UIColor.white, for: UIControlState())
-        okButton.titleLabel?.font = backButton.titleLabel?.font.withSize(17)
-        okButton.addTarget(self, action: #selector(selectAction), for: .touchUpInside)
+        selectButton = UIButton()
+        cancelButton = UIButton()
         
-        backButton.setTitle("Cancel", for: UIControlState())
-        backButton.setTitleColor(UIColor.white, for: UIControlState())
-        backButton.titleLabel?.font = backButton.titleLabel?.font.withSize(17)
-        backButton.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
+        // Styles
+        selectButton.setTitle("Select", for: UIControlState())
+        selectButton.setTitleColor(UIColor.white, for: UIControlState())
+        selectButton.titleLabel?.font = cancelButton.titleLabel?.font.withSize(17)
+        selectButton.addTarget(self, action: #selector(selectAction), for: .touchUpInside)
+        
+        cancelButton.setTitle("Cancel", for: UIControlState())
+        cancelButton.setTitleColor(UIColor.white, for: UIControlState())
+        cancelButton.titleLabel?.font = cancelButton.titleLabel?.font.withSize(17)
+        cancelButton.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         
         // Adding buttons to the superview
-        cutterView.addSubview(okButton)
-        cutterView.addSubview(backButton)
+        cutterView.addSubview(selectButton)
+        cutterView.addSubview(cancelButton)
         
-        // backButton constraints
-        backButton.translatesAutoresizingMaskIntoConstraints = false
-        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .leading, relatedBy: .equal, toItem: cutterView, attribute: .leadingMargin, multiplier: 1, constant: 20))
-        cutterView.addConstraint(NSLayoutConstraint(item: backButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: -32))
+        // cancelButton constraints
+        cancelButton.translatesAutoresizingMaskIntoConstraints = false
+        cutterView.addConstraint(NSLayoutConstraint(item: cancelButton, attribute: .leading, relatedBy: .equal, toItem: cutterView, attribute: .leadingMargin, multiplier: 1, constant: 20))
+        cutterView.addConstraint(NSLayoutConstraint(item: cancelButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: -32))
         
-        // okButton consrtraints
-        okButton.translatesAutoresizingMaskIntoConstraints = false
-        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .trailing, relatedBy: .equal, toItem: cutterView, attribute: .trailingMargin, multiplier: 1, constant: -20))
-        cutterView.addConstraint(NSLayoutConstraint(item: okButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: -32))
+        // selectButton consrtraints
+        selectButton.translatesAutoresizingMaskIntoConstraints = false
+        cutterView.addConstraint(NSLayoutConstraint(item: selectButton, attribute: .trailing, relatedBy: .equal, toItem: cutterView, attribute: .trailingMargin, multiplier: 1, constant: -20))
+        cutterView.addConstraint(NSLayoutConstraint(item: selectButton, attribute: .bottomMargin, relatedBy: .equal, toItem: cutterView, attribute: .bottomMargin, multiplier: 1, constant: -32))
     }
     
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {

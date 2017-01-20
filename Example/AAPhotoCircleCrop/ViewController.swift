@@ -26,7 +26,8 @@ class ViewController: UIViewController, AACircleCropViewControllerDelegate {
     // MARK: - Actions
     //- - -
     @IBAction func cropAction(_ sender: UIButton) {
-        let circleCropController = AACircleCropViewController(withImage: UIImage(named: "my_photo.jpg")!)
+        let circleCropController = AACircleCropViewController()
+        circleCropController.image = UIImage(named: "my_photo.jpg")!
         circleCropController.delegate = self
         present(circleCropController, animated: true, completion: nil)
     }
