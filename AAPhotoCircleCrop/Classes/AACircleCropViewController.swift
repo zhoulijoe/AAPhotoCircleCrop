@@ -9,10 +9,10 @@
 
 import UIKit
 
-public protocol AACircleCropViewControllerDelegate {
+@objc public protocol AACircleCropViewControllerDelegate {
     
-    func circleCropDidCancel()
     func circleCropDidCropImage(_ image: UIImage)
+    @objc optional func circleCropDidCancel()
 }
 
 open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
@@ -168,13 +168,13 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
             delegate?.circleCropDidCropImage(pngImage)
             
         } else {
-            delegate?.circleCropDidCancel()
+            delegate?.circleCropDidCancel?()
         }
         self.dismiss(animated: true, completion: nil) 
     }
     
     func cancelAction() {
-        delegate?.circleCropDidCancel()
+        delegate?.circleCropDidCancel?()
         self.dismiss(animated: true, completion: nil)
     }
 }
