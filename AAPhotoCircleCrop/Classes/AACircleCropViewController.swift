@@ -147,7 +147,7 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     
     func selectAction() {
         
-        let newSize = CGSize(width: image.size.width*scrollView.zoomScale, height: image.size.height*scrollView.zoomScale)
+        let newSize = CGSize(width: image.size.width * scrollView.zoomScale, height: image.size.height * scrollView.zoomScale)
         
         let offset = scrollView.contentOffset
         
