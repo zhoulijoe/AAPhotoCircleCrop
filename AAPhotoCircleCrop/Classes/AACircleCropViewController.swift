@@ -54,6 +54,7 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         imageView.image = image
         imageView.frame = CGRect(origin: CGPoint.zero, size: image.size)
         
+        // Setup scrollView
         scrollView = AACircleCropScrollView(frame: CGRect(x: 0, y: 0, width: circleDiameter, height: circleDiameter))
         scrollView.backgroundColor = UIColor.black
         scrollView.delegate = self
@@ -70,11 +71,10 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         }
         scrollView.zoomScale = scaleWidth
         
-        //Center vertically
+        // Center vertically
         scrollView.contentOffset = CGPoint(x: 0, y: (scrollView.contentSize.height - scrollView.frame.size.height)/2)
         
         scrollView.center = view.center
-        
         view.addSubview(scrollView)
         
         setupCutterView()
@@ -112,13 +112,13 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         cancelButton = UIButton()
         
         // Styles
-        selectButton.setTitle("Select", for: UIControlState())
-        selectButton.setTitleColor(UIColor.white, for: UIControlState())
+        selectButton.setTitle(selectTitle, for: .normal)
+        selectButton.setTitleColor(UIColor.white, for: .normal)
         selectButton.titleLabel?.font = cancelButton.titleLabel?.font.withSize(17)
         selectButton.addTarget(self, action: #selector(selectAction), for: .touchUpInside)
         
-        cancelButton.setTitle("Cancel", for: UIControlState())
-        cancelButton.setTitleColor(UIColor.white, for: UIControlState())
+        cancelButton.setTitle(cancelTitle, for: .normal)
+        cancelButton.setTitleColor(UIColor.white, for: .normal)
         cancelButton.titleLabel?.font = cancelButton.titleLabel?.font.withSize(17)
         cancelButton.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         
