@@ -12,7 +12,6 @@ import UIKit
 open class AACircleCropCutterView: UIView {
     
     override open var frame: CGRect {
-        
         didSet {
             setNeedsDisplay()
         }
@@ -65,5 +64,5 @@ open class AACircleCropCutterView: UIView {
         }
         return false
     }
-
+    
 }

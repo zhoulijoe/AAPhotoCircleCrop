@@ -40,5 +40,4 @@ open class AACircleCropScrollView: UIScrollView {
         return nil
     }
     
-
 }
