@@ -1,6 +1,5 @@
 # AAPhotoCircleCrop
 
-[![Build Status](https://travis-ci.org/andreaantonioni/AAPhotoCircleCrop.svg?branch=master)](https://travis-ci.org/andreaantonioni/AAPhotoCircleCrop)
 [![Version](https://img.shields.io/cocoapods/v/AAPhotoCircleCrop.svg?style=flat)](http://cocoapods.org/pods/AAPhotoCircleCrop)
 [![Platform](https://img.shields.io/cocoapods/p/AAPhotoCircleCrop.svg?style=flat)](http://cocoapods.org/pods/AAPhotoCircleCrop)
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage"></a>
