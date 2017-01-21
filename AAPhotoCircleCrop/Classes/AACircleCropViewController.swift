@@ -1,10 +1,9 @@
 //
 //  AACircleCropViewController.swift
-//  Circle Crop View Controller
 //
 //  Created by Keke Arif on 29/02/2016.
 //  Modified by Andrea Antonioni on 14/01/2017
-//  Copyright © 2016 Keke Arif. All rights reserved.
+//  Copyright © 2017 Andrea Antonioni. All rights reserved.
 //
 
 import UIKit
@@ -18,13 +17,17 @@ import UIKit
 open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     
     // MARK: - Open properties
+    /// Set the delegate to get the cropped image
     open var delegate: AACircleCropViewControllerDelegate?
+    /// Image to crop
     open var image: UIImage!
+    /// Set the size to get the cropped image resized. The
+    /// default size is the circleDiameter
     open var imageSize: CGSize?
+    /// Titles of the buttons. You can use them for localization
     open var selectTitle: String = "Select"
     open var cancelTitle: String = "Cancel"
-    
-    // Status bar settings
+    /// Status bar style
     override open var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -36,6 +39,7 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     fileprivate var scrollView: AACircleCropScrollView!
     fileprivate var cutterView: AACircleCropCutterView!
     private var circleDiameter: CGFloat {
+        // Offeset for leading and trailing
         let circleOffset: CGFloat = 40
         return UIScreen.main.bounds.width - circleOffset * 2
     }
@@ -43,7 +47,6 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
     //- - -
     // MARK: - View Management
     //- - -
-    
     override open func viewDidLoad() {
         super.viewDidLoad()
         
