@@ -29,6 +29,11 @@ class ViewController: UIViewController, AACircleCropViewControllerDelegate {
         let circleCropController = AACircleCropViewController()
         circleCropController.image = UIImage(named: "my_photo.jpg")!
         circleCropController.delegate = self
+        
+        // Set the imageSize you want ot get
+        circleCropController.imageSize = CGSize(width: 200, height: 200)
+        
+        // 🌎 use selectTitle and cancelTitle to localize buttons
         circleCropController.selectTitle = "Scegli"
         circleCropController.cancelTitle = "Annulla"
         present(circleCropController, animated: true, completion: nil)
