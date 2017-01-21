@@ -1,9 +1,8 @@
 //
 //  UIViewController+Extension.swift
-//  Pods
 //
 //  Created by Andrea Antonioni on 18/01/17.
-//
+//  Copyright © 2017 Andrea Antonioni. All rights reserved.
 //
 
 import Foundation
