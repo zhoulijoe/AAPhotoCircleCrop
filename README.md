@@ -82,7 +82,7 @@ AAPhotoCircleCrop is base on [KACircleCropViewController](https://github.com/kek
 
 ## Author
 
-Andrea Antonioni, andreaantonioni97@gmail.com
+Andrea Antonioni ([@andrea_anto97](https://twitter.com/andrea_anto97)), andreaantonioni97@gmail.com
 
 ## License
 
