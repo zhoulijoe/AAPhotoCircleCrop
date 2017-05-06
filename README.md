@@ -2,13 +2,13 @@
 
 [![Version](https://img.shields.io/cocoapods/v/AAPhotoCircleCrop.svg?style=flat)](http://cocoapods.org/pods/AAPhotoCircleCrop)
 [![Platform](https://img.shields.io/cocoapods/p/AAPhotoCircleCrop.svg?style=flat)](http://cocoapods.org/pods/AAPhotoCircleCrop)
-<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage"></a>
+<a hred="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg" alt="Carthage"></a>
 <img src="https://img.shields.io/badge/language-swift-orange.svg" alt="Language: Swift">
 [![License](https://img.shields.io/cocoapods/l/AAPhotoCircleCrop.svg?style=flat)](http://cocoapods.org/pods/AAPhotoCircleCrop)
 
 AAPhotoCircleCrop is a simple circular photo cropper writter in Swift, based on Whatsapp.
 
-![](https://github.com/andreaantonioni/AAPhotoCircleCrop/blob/master/Resources/screenshot1.png "Screenshot 1")
+<img src="https://github.com/andreaantonioni/AAPhotoCircleCrop/blob/master/Resources/screenshot1.png" alt="Screenshot 1" height="50%" width="50%">
 
 ## Requirements
 * iOS 8.0+
