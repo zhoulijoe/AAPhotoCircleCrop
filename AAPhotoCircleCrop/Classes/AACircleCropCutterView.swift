@@ -35,7 +35,10 @@ class AACircleCropCutterView: UIView {
         UIRectFill(rect)
         
         // Draw the circle
-        let circle = UIBezierPath(ovalIn: CGRect(x: rect.size.width/2 - circleDiameter/2, y: rect.size.height/2 - circleDiameter/2, width: circleDiameter, height: circleDiameter))
+        let circle = UIBezierPath(ovalIn: CGRect(x: rect.size.width/2 - circleDiameter/2,
+                                                 y: rect.size.height/2 - circleDiameter/2,
+                                                 width: circleDiameter,
+                                                 height: circleDiameter))
         context?.setBlendMode(.clear)
         UIColor.clear.setFill()
         circle.fill()

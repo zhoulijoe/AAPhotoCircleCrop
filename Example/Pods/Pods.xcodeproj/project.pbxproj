@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1732BCAE1E2A90FC0099EDCE /* AACircleCropCutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAB1E2A90FC0099EDCE /* AACircleCropCutterView.swift */; };
-		1732BCAF1E2A90FC0099EDCE /* AACircleCropScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAC1E2A90FC0099EDCE /* AACircleCropScrollView.swift */; };
-		1732BCB01E2A90FC0099EDCE /* AACircleCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732BCAD1E2A90FC0099EDCE /* AACircleCropViewController.swift */; };
-		177F11DE1E2E67C900C1FCC7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F11DD1E2E67C900C1FCC7 /* UIImage+Extension.swift */; };
-		17BC76491E2F5B2F009630DF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BC76481E2F5B2F009630DF /* UIViewController+Extension.swift */; };
-		213E97F97B0318F22D6636E2B0BFD5ED /* AAPhotoCircleCrop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C45E341616FB4B64AF12515790067 /* AAPhotoCircleCrop-dummy.m */; };
-		287398C4C53CA5D8B03E43F5556CD5C7 /* AAPhotoCircleCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DCD981FF630CE33198EDB38DAEF3F8A /* AAPhotoCircleCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A7B7911B2E4C5FD5E74995202F40162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1EE4A6003E9A78BBA4EAEDCDC21DE67D /* AACircleCropCutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD227F864D7293008CCCD692F9831E0 /* AACircleCropCutterView.swift */; };
+		24859591AFCC136F1C7F1CA57A02569F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F6B98A765BDEF537BF98D738B1E726 /* UIImage+Extension.swift */; };
 		4B80D18E6BE94FBED2316BBAF1BDE096 /* Pods-AAPhotoCircleCrop_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C9D6F250BAA3B6EAB548E7107CC18F /* Pods-AAPhotoCircleCrop_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84B8CA7E0FFB92F7239B0A85F1E801DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		988AB7DE3E09B79071AF2BC412861DE9 /* AAPhotoCircleCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DCD981FF630CE33198EDB38DAEF3F8A /* AAPhotoCircleCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A674FD8112187CB1766D166F975ADCCF /* AACircleCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046ECD3A0CB298ED871698C19500120B /* AACircleCropViewController.swift */; };
+		AB82657BF70627FD962E0652DE8D77B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		AFD7908D24877F1365B7BA8BEB58FF8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		B693F9DE2AE831FB9B4323B4D64789AF /* Pods-AAPhotoCircleCrop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A1DEDD1EEA9287AB27703F244383D0 /* Pods-AAPhotoCircleCrop_Example-dummy.m */; };
+		B71B4906D38CF5FC8DB47EC5D16BDAAD /* AACircleCropScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931D035BD7047D8330AE4B0A5274C0AE /* AACircleCropScrollView.swift */; };
+		BC65A75FA4DDEFC0B9022A4DD88540B2 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383C0176D4A356826FDEB8310C808372 /* UIViewController+Extension.swift */; };
+		DCA781966B8957EAE526E11E33E601AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		E139498B8D693D8FBDA9DA343FC327D2 /* Pods-AAPhotoCircleCrop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D789F3B7518A4DDB708A37D065D7C /* Pods-AAPhotoCircleCrop_Tests-dummy.m */; };
-		E56610A586AA96A55ACBF8553C497D78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		E624F58433B66A3B5292F6802C55C54D /* Pods-AAPhotoCircleCrop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE63CDFB166E756F74E5D3B44EA3707 /* Pods-AAPhotoCircleCrop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA9202B1FAEF59398BCE6BB855AA0673 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		EACF44EEB5467BB4ABE5799FAAE11C8C /* AAPhotoCircleCrop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C45E341616FB4B64AF12515790067 /* AAPhotoCircleCrop-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,26 +29,23 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 14FD2CB87BAB4FB6E19B0EDBDA00B3BE;
+			remoteGlobalIDString = D856E070FD4871954B410EFFC32488E2;
 			remoteInfo = AAPhotoCircleCrop;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		088741B649564F22C5635CEBD2657892 /* Pods-AAPhotoCircleCrop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AAPhotoCircleCrop_Tests.modulemap"; sourceTree = "<group>"; };
-		0DFD3F39350E7C25009481DA041AA4C8 /* AAPhotoCircleCrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAPhotoCircleCrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		046ECD3A0CB298ED871698C19500120B /* AACircleCropViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AACircleCropViewController.swift; sourceTree = "<group>"; };
+		088741B649564F22C5635CEBD2657892 /* Pods-AAPhotoCircleCrop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AAPhotoCircleCrop_Tests.modulemap"; sourceTree = "<group>"; };
+		0DFD3F39350E7C25009481DA041AA4C8 /* AAPhotoCircleCrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAPhotoCircleCrop.framework; path = AAPhotoCircleCrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E75A06FBD9225583F4D67C74EC4D801 /* Pods-AAPhotoCircleCrop_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AAPhotoCircleCrop_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		15BA6B0FEEBAE07D1B364AAE09920D63 /* Pods-AAPhotoCircleCrop_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPhotoCircleCrop_Tests-resources.sh"; sourceTree = "<group>"; };
-		1732BCAB1E2A90FC0099EDCE /* AACircleCropCutterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleCropCutterView.swift; sourceTree = "<group>"; };
-		1732BCAC1E2A90FC0099EDCE /* AACircleCropScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleCropScrollView.swift; sourceTree = "<group>"; };
-		1732BCAD1E2A90FC0099EDCE /* AACircleCropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleCropViewController.swift; sourceTree = "<group>"; };
-		177F11DD1E2E67C900C1FCC7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		17BC76481E2F5B2F009630DF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		18C9D6F250BAA3B6EAB548E7107CC18F /* Pods-AAPhotoCircleCrop_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAPhotoCircleCrop_Example-umbrella.h"; sourceTree = "<group>"; };
-		1E8465C35284DDC815E22F5A1A13516B /* AAPhotoCircleCrop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AAPhotoCircleCrop.modulemap; sourceTree = "<group>"; };
+		1E8465C35284DDC815E22F5A1A13516B /* AAPhotoCircleCrop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AAPhotoCircleCrop.modulemap; sourceTree = "<group>"; };
 		29D7A2DF10831A01115F9E1BDB50CA68 /* Pods-AAPhotoCircleCrop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPhotoCircleCrop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		31A1DEDD1EEA9287AB27703F244383D0 /* Pods-AAPhotoCircleCrop_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAPhotoCircleCrop_Example-dummy.m"; sourceTree = "<group>"; };
 		34322B669E590014220BB61B01FAB044 /* Pods-AAPhotoCircleCrop_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPhotoCircleCrop_Example.release.xcconfig"; sourceTree = "<group>"; };
+		383C0176D4A356826FDEB8310C808372 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3D99333DF60F08622AF3BAB84A614D5C /* Pods-AAPhotoCircleCrop_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPhotoCircleCrop_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		4DF6D656493894275B31F619D554D8C5 /* Pods-AAPhotoCircleCrop_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AAPhotoCircleCrop_Example-resources.sh"; sourceTree = "<group>"; };
 		4EE63CDFB166E756F74E5D3B44EA3707 /* Pods-AAPhotoCircleCrop_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAPhotoCircleCrop_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -58,14 +56,18 @@
 		68A59DE50A17CAD0FFFEF42B884B2161 /* AAPhotoCircleCrop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAPhotoCircleCrop.xcconfig; sourceTree = "<group>"; };
 		6B2B2FCB34F5778CA3EED519ECC91C6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7031BB72E3CCA19C2F2C7B9E12F96642 /* Pods-AAPhotoCircleCrop_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AAPhotoCircleCrop_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9453B56080046239BFE704FBB9C1AC7C /* Pods-AAPhotoCircleCrop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AAPhotoCircleCrop_Example.modulemap"; sourceTree = "<group>"; };
+		931D035BD7047D8330AE4B0A5274C0AE /* AACircleCropScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AACircleCropScrollView.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9453B56080046239BFE704FBB9C1AC7C /* Pods-AAPhotoCircleCrop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AAPhotoCircleCrop_Example.modulemap"; sourceTree = "<group>"; };
 		9FE7446FD153C570C1F9A59B98090E20 /* AAPhotoCircleCrop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAPhotoCircleCrop-prefix.pch"; sourceTree = "<group>"; };
-		ACB6844AA466EC3B0F7BCEC8544344AC /* Pods_AAPhotoCircleCrop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAPhotoCircleCrop_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ACB6844AA466EC3B0F7BCEC8544344AC /* Pods_AAPhotoCircleCrop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AAPhotoCircleCrop_Example.framework; path = "Pods-AAPhotoCircleCrop_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BDD227F864D7293008CCCD692F9831E0 /* AACircleCropCutterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AACircleCropCutterView.swift; sourceTree = "<group>"; };
 		CDFE9ED299CA64D07BF3FA777C822D8D /* Pods-AAPhotoCircleCrop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPhotoCircleCrop_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DBE8114F37705A65AEEFAED8E3156F35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4B4D175C63A8A86885854ADCAA4134E /* Pods_AAPhotoCircleCrop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAPhotoCircleCrop_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B4D175C63A8A86885854ADCAA4134E /* Pods_AAPhotoCircleCrop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AAPhotoCircleCrop_Tests.framework; path = "Pods-AAPhotoCircleCrop_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F6B98A765BDEF537BF98D738B1E726 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		EE212009DC086B8AED39B3C171098ABF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F497D459504FA59E44C9060EDEE952EA /* Pods-AAPhotoCircleCrop_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AAPhotoCircleCrop_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F63C45E341616FB4B64AF12515790067 /* AAPhotoCircleCrop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAPhotoCircleCrop-dummy.m"; sourceTree = "<group>"; };
@@ -73,11 +75,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4654C196963ECB96B780496D180F7BD6 /* Frameworks */ = {
+		3360DF360CD941D35F9B85CB0062F604 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7B7911B2E4C5FD5E74995202F40162 /* Foundation.framework in Frameworks */,
+				84B8CA7E0FFB92F7239B0A85F1E801DA /* Foundation.framework in Frameworks */,
+				DCA781966B8957EAE526E11E33E601AB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA9202B1FAEF59398BCE6BB855AA0673 /* Foundation.framework in Frameworks */,
+				AB82657BF70627FD962E0652DE8D77B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,13 +96,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E56610A586AA96A55ACBF8553C497D78 /* Foundation.framework in Frameworks */,
+				AFD7908D24877F1365B7BA8BEB58FF8B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D944F2B7ABCA16401531743708531A4 /* AAPhotoCircleCrop */ = {
+			isa = PBXGroup;
+			children = (
+				BA5892CC0397B3040A61630C6A11BF13 /* Classes */,
+			);
+			name = AAPhotoCircleCrop;
+			path = AAPhotoCircleCrop;
+			sourceTree = "<group>";
+		};
 		0FB6BA1E5F4F33D3A199CE9EF15C82E0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +154,23 @@
 			path = "Target Support Files/Pods-AAPhotoCircleCrop_Tests";
 			sourceTree = "<group>";
 		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		5C957E6772333E11E67320751FAB0EA1 /* Pods-AAPhotoCircleCrop_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,19 +192,11 @@
 		70DC94ABA4C9F60B5E93FE3F1A5E0944 /* AAPhotoCircleCrop */ = {
 			isa = PBXGroup;
 			children = (
-				C299F58BA9CDB2D21687DD7F0A3D9443 /* AAPhotoCircleCrop */,
+				0D944F2B7ABCA16401531743708531A4 /* AAPhotoCircleCrop */,
 				0FB6BA1E5F4F33D3A199CE9EF15C82E0 /* Support Files */,
 			);
 			name = AAPhotoCircleCrop;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -183,38 +204,23 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				C987563B1C72645468FD84A40FEA822E /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				18EC874F77531480106C5FC75EDA346C /* Products */,
 				CA1C071603E3106EA9C489A43402E0AC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7F90F12515E1D1F4D24D7DC4AA01E01E /* Classes */ = {
+		BA5892CC0397B3040A61630C6A11BF13 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1732BCAB1E2A90FC0099EDCE /* AACircleCropCutterView.swift */,
-				1732BCAC1E2A90FC0099EDCE /* AACircleCropScrollView.swift */,
-				1732BCAD1E2A90FC0099EDCE /* AACircleCropViewController.swift */,
-				177F11DD1E2E67C900C1FCC7 /* UIImage+Extension.swift */,
-				17BC76481E2F5B2F009630DF /* UIViewController+Extension.swift */,
+				BDD227F864D7293008CCCD692F9831E0 /* AACircleCropCutterView.swift */,
+				931D035BD7047D8330AE4B0A5274C0AE /* AACircleCropScrollView.swift */,
+				046ECD3A0CB298ED871698C19500120B /* AACircleCropViewController.swift */,
+				E7F6B98A765BDEF537BF98D738B1E726 /* UIImage+Extension.swift */,
+				383C0176D4A356826FDEB8310C808372 /* UIViewController+Extension.swift */,
 			);
+			name = Classes;
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C299F58BA9CDB2D21687DD7F0A3D9443 /* AAPhotoCircleCrop */ = {
-			isa = PBXGroup;
-			children = (
-				7F90F12515E1D1F4D24D7DC4AA01E01E /* Classes */,
-			);
-			path = AAPhotoCircleCrop;
 			sourceTree = "<group>";
 		};
 		C987563B1C72645468FD84A40FEA822E /* Development Pods */ = {
@@ -237,14 +243,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		269C33DD7D511BD5D551DEB10214BE2D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				287398C4C53CA5D8B03E43F5556CD5C7 /* AAPhotoCircleCrop-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		40663C4AFE76C6A20A5A28F7C5680ADB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,26 +259,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		995A66EF55454A2125A373655C1D9EBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988AB7DE3E09B79071AF2BC412861DE9 /* AAPhotoCircleCrop-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14FD2CB87BAB4FB6E19B0EDBDA00B3BE /* AAPhotoCircleCrop */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7C95B1351C0ED831337D68845858F999 /* Build configuration list for PBXNativeTarget "AAPhotoCircleCrop" */;
-			buildPhases = (
-				1F094588DF9B3C1FEAFFF76C1570641E /* Sources */,
-				4654C196963ECB96B780496D180F7BD6 /* Frameworks */,
-				269C33DD7D511BD5D551DEB10214BE2D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AAPhotoCircleCrop;
-			productName = AAPhotoCircleCrop;
-			productReference = 0DFD3F39350E7C25009481DA041AA4C8 /* AAPhotoCircleCrop.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		4E01F448CA1492832752D78C5D20AAE9 /* Pods-AAPhotoCircleCrop_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46F3B0645F625FB61EAED296AB93A4B7 /* Build configuration list for PBXNativeTarget "Pods-AAPhotoCircleCrop_Tests" */;
@@ -316,22 +305,31 @@
 			productReference = ACB6844AA466EC3B0F7BCEC8544344AC /* Pods_AAPhotoCircleCrop_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D856E070FD4871954B410EFFC32488E2 /* AAPhotoCircleCrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06FF26083ABA3922E8C54E6042C6596 /* Build configuration list for PBXNativeTarget "AAPhotoCircleCrop" */;
+			buildPhases = (
+				ADFDCE0B8B6EBDFC856F3337A8311C11 /* Sources */,
+				3360DF360CD941D35F9B85CB0062F604 /* Frameworks */,
+				995A66EF55454A2125A373655C1D9EBF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AAPhotoCircleCrop;
+			productName = AAPhotoCircleCrop;
+			productReference = 0DFD3F39350E7C25009481DA041AA4C8 /* AAPhotoCircleCrop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					14FD2CB87BAB4FB6E19B0EDBDA00B3BE = {
-						LastSwiftMigration = 0820;
-					};
-					A695577DA7125CE44199CEDA02D43238 = {
-						LastSwiftMigration = 0820;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -345,7 +343,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14FD2CB87BAB4FB6E19B0EDBDA00B3BE /* AAPhotoCircleCrop */,
+				D856E070FD4871954B410EFFC32488E2 /* AAPhotoCircleCrop */,
 				A695577DA7125CE44199CEDA02D43238 /* Pods-AAPhotoCircleCrop_Example */,
 				4E01F448CA1492832752D78C5D20AAE9 /* Pods-AAPhotoCircleCrop_Tests */,
 			);
@@ -353,16 +351,16 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F094588DF9B3C1FEAFFF76C1570641E /* Sources */ = {
+		ADFDCE0B8B6EBDFC856F3337A8311C11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17BC76491E2F5B2F009630DF /* UIViewController+Extension.swift in Sources */,
-				1732BCB01E2A90FC0099EDCE /* AACircleCropViewController.swift in Sources */,
-				1732BCAF1E2A90FC0099EDCE /* AACircleCropScrollView.swift in Sources */,
-				177F11DE1E2E67C900C1FCC7 /* UIImage+Extension.swift in Sources */,
-				213E97F97B0318F22D6636E2B0BFD5ED /* AAPhotoCircleCrop-dummy.m in Sources */,
-				1732BCAE1E2A90FC0099EDCE /* AACircleCropCutterView.swift in Sources */,
+				1EE4A6003E9A78BBA4EAEDCDC21DE67D /* AACircleCropCutterView.swift in Sources */,
+				B71B4906D38CF5FC8DB47EC5D16BDAAD /* AACircleCropScrollView.swift in Sources */,
+				A674FD8112187CB1766D166F975ADCCF /* AACircleCropViewController.swift in Sources */,
+				EACF44EEB5467BB4ABE5799FAAE11C8C /* AAPhotoCircleCrop-dummy.m in Sources */,
+				24859591AFCC136F1C7F1CA57A02569F /* UIImage+Extension.swift in Sources */,
+				BC65A75FA4DDEFC0B9022A4DD88540B2 /* UIViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,50 +386,17 @@
 		F102313D9C309CC7C4C08B28F335F39C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AAPhotoCircleCrop;
-			target = 14FD2CB87BAB4FB6E19B0EDBDA00B3BE /* AAPhotoCircleCrop */;
+			target = D856E070FD4871954B410EFFC32488E2 /* AAPhotoCircleCrop */;
 			targetProxy = 93DD283DB2B834B2E3B8B969A2201EAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2829ECD4D98DBFCCD117EDD1CD5DA5FE /* Debug */ = {
+		066E5C7D5C71D1DC8D417DD41B017E3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68A59DE50A17CAD0FFFEF42B884B2161 /* AAPhotoCircleCrop.xcconfig */;
+			baseConfigurationReference = 34322B669E590014220BB61B01FAB044 /* Pods-AAPhotoCircleCrop_Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AAPhotoCircleCrop/AAPhotoCircleCrop-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AAPhotoCircleCrop/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AAPhotoCircleCrop/AAPhotoCircleCrop.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AAPhotoCircleCrop;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7F6F9762E7D78466140196B5168B89E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDFE9ED299CA64D07BF3FA777C822D8D /* Pods-AAPhotoCircleCrop_Tests.release.xcconfig */;
-			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -443,31 +408,34 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AAPhotoCircleCrop_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AAPhotoCircleCrop_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AAPhotoCircleCrop_Tests/Pods-AAPhotoCircleCrop_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-AAPhotoCircleCrop_Example/Pods-AAPhotoCircleCrop_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AAPhotoCircleCrop_Tests;
+				PRODUCT_NAME = Pods_AAPhotoCircleCrop_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -475,50 +443,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -547,10 +478,160 @@
 			};
 			name = Debug;
 		};
-		A248F45C7A52042A3B858770B9A4E09F /* Debug */ = {
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E1F3B4F5F13450A32859ACB600ABFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFE9ED299CA64D07BF3FA777C822D8D /* Pods-AAPhotoCircleCrop_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AAPhotoCircleCrop_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AAPhotoCircleCrop_Tests/Pods-AAPhotoCircleCrop_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AAPhotoCircleCrop_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C391DE42E899EF978049442144F41A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A59DE50A17CAD0FFFEF42B884B2161 /* AAPhotoCircleCrop.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAPhotoCircleCrop/AAPhotoCircleCrop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAPhotoCircleCrop/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAPhotoCircleCrop/AAPhotoCircleCrop.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AAPhotoCircleCrop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA95CBAFD5F89EBCF2DA2B9F9F2A3C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A59DE50A17CAD0FFFEF42B884B2161 /* AAPhotoCircleCrop.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AAPhotoCircleCrop/AAPhotoCircleCrop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAPhotoCircleCrop/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAPhotoCircleCrop/AAPhotoCircleCrop.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AAPhotoCircleCrop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4A4140B6D8B73ACD2F3EBB99321A5A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29D7A2DF10831A01115F9E1BDB50CA68 /* Pods-AAPhotoCircleCrop_Tests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -582,10 +663,11 @@
 			};
 			name = Debug;
 		};
-		AFA2047FD335DFB534772A829345ECA2 /* Debug */ = {
+		FA64D653E9E585959DB33BD4DD8F4F1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F497D459504FA59E44C9060EDEE952EA /* Pods-AAPhotoCircleCrop_Example.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -611,6 +693,7 @@
 				PRODUCT_NAME = Pods_AAPhotoCircleCrop_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -619,83 +702,14 @@
 			};
 			name = Debug;
 		};
-		BE2CD3AECC4B4200AC74D3D223BDEF8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34322B669E590014220BB61B01FAB044 /* Pods-AAPhotoCircleCrop_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AAPhotoCircleCrop_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AAPhotoCircleCrop_Example/Pods-AAPhotoCircleCrop_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AAPhotoCircleCrop_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C38FA2F0D240EC56BFBE1EAA8BB67BE1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68A59DE50A17CAD0FFFEF42B884B2161 /* AAPhotoCircleCrop.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AAPhotoCircleCrop/AAPhotoCircleCrop-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AAPhotoCircleCrop/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AAPhotoCircleCrop/AAPhotoCircleCrop.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AAPhotoCircleCrop;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		1214054AF8F92AB82D8EBB5355D73C14 /* Build configuration list for PBXNativeTarget "Pods-AAPhotoCircleCrop_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFA2047FD335DFB534772A829345ECA2 /* Debug */,
-				BE2CD3AECC4B4200AC74D3D223BDEF8B /* Release */,
+				FA64D653E9E585959DB33BD4DD8F4F1A /* Debug */,
+				066E5C7D5C71D1DC8D417DD41B017E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -703,8 +717,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -712,17 +726,17 @@
 		46F3B0645F625FB61EAED296AB93A4B7 /* Build configuration list for PBXNativeTarget "Pods-AAPhotoCircleCrop_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A248F45C7A52042A3B858770B9A4E09F /* Debug */,
-				7F6F9762E7D78466140196B5168B89E2 /* Release */,
+				E4A4140B6D8B73ACD2F3EBB99321A5A4 /* Debug */,
+				84E1F3B4F5F13450A32859ACB600ABFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C95B1351C0ED831337D68845858F999 /* Build configuration list for PBXNativeTarget "AAPhotoCircleCrop" */ = {
+		F06FF26083ABA3922E8C54E6042C6596 /* Build configuration list for PBXNativeTarget "AAPhotoCircleCrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2829ECD4D98DBFCCD117EDD1CD5DA5FE /* Debug */,
-				C38FA2F0D240EC56BFBE1EAA8BB67BE1 /* Release */,
+				DA95CBAFD5F89EBCF2DA2B9F9F2A3C2A /* Debug */,
+				C391DE42E899EF978049442144F41A25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
