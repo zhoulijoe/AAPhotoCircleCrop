@@ -155,8 +155,6 @@ open class AACircleCropViewController: UIViewController, UIScrollViewDelegate {
         let offset = scrollView.contentOffset
         
         UIGraphicsBeginImageContextWithOptions(CGSize(width: circleDiameter, height: circleDiameter), false, 0)
-        let circlePath = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: circleDiameter, height: circleDiameter))
-        circlePath.addClip()
         var sharpRect = CGRect(x: -offset.x, y: -offset.y, width: newSize.width, height: newSize.height)
         sharpRect = sharpRect.integral
         
